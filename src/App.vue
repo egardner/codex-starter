@@ -14,7 +14,25 @@
 			<!-- If any nearby articles have been found, they will be shown here -->
 			<ul v-if="articles.length > 0">
 				<li v-for="article in articles">
-					<!-- Right now we just show the title for each  -->
+					<!--
+						Right now we just show the title for each article.
+						The "article" object also has some other properties that
+						you might want to access. Here is an incomplete list:
+
+						- description (optional)
+						- canonicalurl (useful for linking)
+						- thumbnail (contains a "source" property for the image resource)
+						- coordinates (contains "lat" and "lon" properties as
+						  well as "dist" for distance)
+
+						Try displaying some additional data for each article in
+						the list (but make sure it exsits first). Can you link
+						to the Wikipedia article or show an image for each one?
+
+						After that, try using the Codex Card component
+						(https://doc.wikimedia.org/codex/latest/components/demos/card.html)
+						to display the data in a nicer-looking way.
+					-->
 					<p>
 						{{ article.title }}
 					</p>
